@@ -1,0 +1,61 @@
+.footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 16px;
+}
+.footer-container {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-socials {
+}
+.footer-title {
+  color: #f4da98;
+  font-size: 29px;
+  @include extrabold;
+  margin-bottom: 14px;
+}
+
+.footer-socials {
+  &__links {
+    display: flex;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-right: 5px;
+    border: 1px solid rgba($color: white, $alpha: 0.1);
+  }
+  &__item:hover {
+    border: 1px solid rgba($color: white, $alpha: 0.3);
+    background-color: rgb(12, 12, 12);
+    .svg-bg {
+      fill: rgb(12, 12, 12);
+    }
+  }
+}
+
+.coppyright {
+}
+
+.coppyright-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 25px;
+  @include semibold;
+  padding: 15px;
+
+  height: 45px;
+  border: 1px solid rgba($color: white, $alpha: 0.2);
+}
+.coppyright-name:hover {
+  background-color: rgb(12, 12, 12);
+
+  border: 1px solid rgba($color: white, $alpha: 0.3);
+  cursor: default;
+}

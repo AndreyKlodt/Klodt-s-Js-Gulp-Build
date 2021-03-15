@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- meta -->
+  <title>Разработка Сайтов во Владивостоке | WildCoder</title>
+  <meta name="description"
+    content="Профессиональное создание и продвижение сайтов. Более 5-и лет опыта. Подробности и цены по телефону: +7 999 617 64 82">
+  <meta name="keywords" content="">
+
+  <link rel="stylesheet" href="style/contactsWEB.css">
+  <link rel="shortcut icon" href="img/favicon1.ico">
+</head>
+
+@@include("parts/header.html")
+
+
+<section class="contacts">
+  <div class="container">
+    <h2 class="section-title">Контакты</h2>
+    <div class="contacts-block">
+
+      <div class="contacts-form">
+        <h3 class="contacts__title">Заполните форму и я свяжусь с вами!</h3>
+
+        <form class="form" action="#" method="POST">
+          <input class="contacts__input" name="fio" type="text" placeholder="Имя*" required autocomplete="off"
+            id="name-form" autofocus>
+          <label class="visually-hidden" for="name-form">Ваше имя</label>
+          <input class="contacts__input" name="mail" type="email" placeholder="Контактный e-mail*" required
+            autocomplete="off" id="mail-form">
+          <label class="visually-hidden" for="mail-form">Ваша почта</label>
+          <textarea class="contacts__input contacts__textarea" name="additional" cols="30" rows="10"
+            placeholder="Доп. информация" id="textarea-form"></textarea>
+          <label class="visually-hidden" for="textarea-form">Дополнительная информация</label>
+          <input class="contacts__button" type="submit" value="ОТПРАВИТЬ">
+        </form>
+      </div>
+      <div class="contacts-form">
+        <h3 class="contacts__title">Контакты</h3>
+
+        <div class="contacts-links">
+          <p><span>Телефон:</span> <br> <a target="_blank" href="tel:+79996176482">+7(999)617-64-82</a></p>
+          <p><span>Почта:</span> <br> <a target="_blank" href="mailto:andreyklodt@gmail.com">andreyklodt@gmail.com</a>
+          </p>
+          <p><span>Телеграм:</span> <br> <a target="_blank" href="https://t.me/AndreyKlodt">@AndreyKlodt</a></p>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+@@include("parts/footer.html")
+<div class="modal success-modal">
+  <div class="modal-dialog success-dialog">
+    <button class="modal-dialog__close"></button>
+    <div class="modal-dialog__wrapper">
+      <div class="modal-dialog__title">Ваша заявка успешно принята!</div>
+      <span>Данное окно является демонстративным, ваша заявка никуда не была принята)</span>
+    </div>
+  </div>
+</div>
+
+<script src="js/contacts-min.js"></script>
+</body>
+
+</html>

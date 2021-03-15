@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- meta -->
+  <title>Разработка Сайтов во Владивостоке | WildCoder</title>
+  <meta name="description"
+    content="Профессиональное создание и продвижение сайтов. Более 5-и лет опыта. Подробности и цены по телефону: +7 999 617 64 82">
+  <meta name="keywords" content="">
+
+  <link rel="stylesheet" href="style/jsWEB.css">
+  <link rel="shortcut icon" href="img/favicon1.ico">
+</head>
+
+@@include("parts/header.html")
+
+
+<main>
+  <h1 class="visually-hidden">Андрей Клодт - Javascript Разработчик/Верстальщик</h1>
+  <section class="tabs" id="tabs">
+    <div class="container">
+      <h2 class="tabs__title section-title">Табы</h2>
+      <div class="tabs-container">
+        <ul class="tabs__left-buttons">
+          <li class="tabs__link"><a class="tabs__button" href="#">Картинка 1</a></li>
+          <li class="tabs__link"><a class="tabs__button" href="#">Картинка 2</a></li>
+          <li class="tabs__link"><a class="tabs__button" href="#">Картинка 3</a></li>
+          <li class="tabs__link"><a class="tabs__button" href="#">Картинка 4</a></li>
+        </ul>
+        <div class="tabs-wrapper">
+          <div class="tabs__items-wrapper">
+            <div class="tabs__item"><img src="img/Tabs/space1.jpg" alt="Космос Табы" width="360" height="300">
+            </div>
+            <div class="tabs__item tabs__item--hide"><img src="img/Tabs/space2.jpg" alt="Космос2 Табы" width="360"
+                height="300">
+            </div>
+            <div class="tabs__item tabs__item--hide"><img src="img/Tabs/space3.jpg" alt="Космос3 Табы" width="360"
+                height="300">
+            </div>
+            <div class="tabs__item tabs__item--hide"><img src="img/Tabs/space4.jpeg" alt="Космос4 Табы" width="360"
+                height="300"></div>
+          </div>
+
+          <ul class="modal__buttons-wrapper base-buttons ">
+            <li class="modal__buttons modal__buttons--active order-btn"> <a>ЗАКАЗАТЬ</a></li>
+            <li class="modal__buttons modal__buttons--inactive" id="tabs__code-btn"> <a>ПОСМОТРЕТЬ КОД</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="timer" id="timer">
+    <div class="container">
+      <h2 class="section-title">Таймер</h2>
+      <div class="timer-container">
+        <h3 class="timer__title">До моего дня рождения осталось: </h3>
+        <span class="timer__subtitle">*Не забудь меня поздравить*</span>
+
+        <div class="timer-blocks">
+          <div class="timer__elem"><span id="days">58</span>
+            <p>дней</p>
+          </div>
+          <div class="timer__elem"><span id="hours">22</span>
+            <p>часов</p>
+          </div>
+          <div class="timer__elem"><span id="minutes">07</span>
+            <p>минут</p>
+          </div>
+          <div class="timer__elem"><span id="seconds">31</span>
+            <p>секунд</p>
+          </div>
+        </div>
+      </div>
+      <ul class="modal__buttons-wrapper base-buttons">
+        <li class="modal__buttons modal__buttons--active slider__modal-button order-btn"> <a>ЗАКАЗАТЬ</a></li>
+        <li class="modal__buttons modal__buttons--inactive slider__modal-button" id="timer__code-btn">
+          <a>ПОСМОТРЕТЬ КОД</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slider" id="slider">
+    <div class="container ">
+      <h2 class="section-title">Карусель</h2>
+      <span class="section-subtitle">"Пятьдесят Оттенков Серого"</span>
+
+      <div class="slider-wrapper ">
+        <div class="slider-window">
+          <div class="slider-items">
+            <div class="slider-item"></div>
+            <div class="slider-item">2</div>
+            <div class="slider-item">3</div>
+            <div class="slider-item">4</div>
+            <div class="slider-item">5</div>
+            <div class="slider-item">6</div>
+            <div class="slider-item">7</div>
+
+          </div>
+          <div class="slider-buttons">
+            <button class="slider-button slider-button--left" aria-label="Кнопка слайдера влево"></button>
+            <button class="slider-button slider-button--right" aria-label="Кнопка слайдера вправо"></button>
+
+          </div>
+
+        </div>
+        <ul class="modal__buttons-wrapper base-buttons">
+          <li class="modal__buttons modal__buttons--active slider__modal-button order-btn">
+            <a>ЗАКАЗАТЬ</a>
+          </li>
+          <li class="modal__buttons modal__buttons--inactive slider__modal-button" id="slider__code-btn">
+            <a>ПОСМОТРЕТЬ КОД</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+@@include("parts/footer.html")
+<div data-modalOrder class="modal">
+  <div class="modal-dialog">
+    <button class="modal-dialog__close"></button>
+    <div class="modal-dialog__wrapper">
+      <div class="modal-dialog__title">Напишите мне!</div>
+
+      <form class="modal-dialog__form" action="#">
+
+        <input class="modal-dialog__input modal-dialog__input-name" id="name-form" placeholder="Ваше имя*" type="text"
+          name="name" required autocomplete="off">
+        <label class="visually-hidden" for="name-form">Ваше имя</label>
+
+        <input class="modal-dialog__input modal-dialog__input-mail" id="mail-form" placeholder="Email адрес*"
+          type="email" name="email" required autocomplete="off">
+        <label class="visually-hidden" for="mail-form">Ваш Email адрес</label>
+
+        <textarea class="modal-dialog__input modal-dialog__input-question" id="textarea-form"
+          placeholder="Введите сообщение" name="additional"></textarea>
+        <label class="visually-hidden" for="textarea-form">Дополнительная информация</label>
+
+        <input type="submit" class="modal-dialog__send-btn">
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal success-modal">
+  <div class="modal-dialog success-dialog">
+    <button class="modal-dialog__close"></button>
+    <div class="modal-dialog__wrapper">
+      <div class="modal-dialog__title">Ваша заявка успешно принята!</div>
+      <span>Данное окно является демонстративным, ваша заявка никуда не была принята)</span>
+    </div>
+  </div>
+</div>
+<!-- tabs -->
+<div class="modal tabsCode">
+
+  <div class="modal-dialog modal-dialog--code">
+    <button class="modal-dialog__close"></button>
+    <div class="modal-dialog__wrapper">
+      <div class="modal-dialog__title">Код Табов</div>
+      <textarea class="modal-dialog__code-textarea" spellcheck="false" name="code" cols="30" rows="10" readonly>
+
+<!-- Привет, если ты заинтересовался моим кодом, то напиши мне на личную почту: andreyklodt@gmail.com, и я тебе проведу экскурсию🙃
+
+const wrapper = document.querySelector(".tabs__items-wrapper"),
+  pictures = wrapper.querySelectorAll(".tabs__item"),
+  buttons = document.querySelectorAll(".tabs__button");
+
+buttons.forEach((elem, index) => {
+
+  elem.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    buttons.forEach(elem => {
+      elem.classList.remove("tabs__button--active");
+    });
+
+    event.target.classList.add("fade");
+    event.target.classList.add("tabs__button--active");
+    hidePictures(index);
+  });
+});
+
+function hidePictures(index) {
+  pictures.forEach(elem => {
+    elem.classList.add("tabs__item--hide");
+  });
+
+  pictures[index].classList.remove("tabs__item--hide");
+  pictures[index].classList.add("fade");
+
+} -->
+          </textarea>
+    </div>
+  </div>
+</div>
+<!-- slider -->
+<div class="modal sliderCode">
+
+  <div class="modal-dialog modal-dialog--code">
+    <button class="modal-dialog__close"></button>
+    <div class="modal-dialog__wrapper">
+      <div class="modal-dialog__title">Код Слайдера-Карусели</div>
+
+      <textarea class="modal-dialog__code-textarea" spellcheck="false" name="code" cols="30" rows="10" readonly>
+            <!-- Привет, если ты заинтересовался моим кодом, то напиши мне на личную почту: andreyklodt@gmail.com, и я тебе проведу экскурсию🙃
+          
+            const sliderItems = document.querySelector(".slider-items"),
+    leftSliderBtn = document.querySelector(".slider-button--left"),
+    rightSliderBtn = document.querySelector(".slider-button--right"),
+    sliderItem = document.querySelectorAll(".slider-item");
+  
+  let itemsAmmount = 1,
+    moveLenght = 0;
+  let elemWidth = sliderItems.offsetWidth / itemsAmmount;
+  
+  function setSize() {
+    sliderItems.childNodes.forEach(elem => {
+      elem.style.minWidth = elemWidth + "px";
+    });
+  }
+  
+  function transformPosition() {
+    sliderItems.style.transform = `translate(${moveLenght + "px"})`;
+  }
+  
+  function moveRight() {
+    rightSliderBtn.addEventListener("click", () => {
+      moveLenght -= elemWidth;
+      transformPosition(moveLenght);
+      checkPostion();
+    });
+  }
+  
+  function moveLeft() {
+    leftSliderBtn.addEventListener("click", () => {
+      moveLenght += elemWidth;
+      transformPosition(moveLenght);
+      checkPostion();
+    });
+  }
+  
+  function interval() {
+    let timer = setInterval(() => {
+      if (moveLenght === elemWidth * (-sliderItems.childNodes.length + itemsAmmount)) {
+        clearInterval(timer);
+        let timerLeft = setInterval(() => {
+          if (moveLenght === 0) {
+            clearInterval(timerLeft);
+            interval();
+          } else {
+  
+            moveLenght += elemWidth;
+            transformPosition(moveLenght);
+            checkPostion();
+          }
+        }, 4500);
+        return;
+      } else {
+        moveLenght -= elemWidth;
+        transformPosition(moveLenght);
+        checkPostion();
+      }
+    }, 4500);
+  }
+  
+  function checkPostion() {
+    if (moveLenght === 0) {
+      leftSliderBtn.disabled = true;
+  
+    } else {
+      leftSliderBtn.disabled = false;
+  
+    }
+    if (moveLenght === elemWidth * (-sliderItems.childNodes.length + itemsAmmount)) {
+      rightSliderBtn.disabled = true;
+    } else {
+      rightSliderBtn.disabled = false;
+    }
+  }
+  
+  function createSlide(num) {
+    return `div class="slider-item">Оттенок серого  br №${num}`;
+  }
+  
+  function fillHtml() {
+    sliderItems.innerHTML = "";
+    for (let i = 1; i <= 50; i++) {
+      sliderItems.innerHTML += createSlide(i);
+    }
+  }
+  
+  fillHtml();
+  setSize();
+  checkPostion();
+  interval();
+  moveRight();
+  moveLeft(); -->
+  
+          </textarea>
+
+
+    </div>
+  </div>
+</div>
+<!-- timer -->
+<div class="modal timerCode">
+
+  <div class="modal-dialog modal-dialog--code">
+    <button class="modal-dialog__close"></button>
+    <div class="modal-dialog__wrapper">
+      <div class="modal-dialog__title">Код Таймера</div>
+      <textarea class="modal-dialog__code-textarea" spellcheck="false" name="code" cols="30" rows="10" readonly>
+
+          <!-- Привет, если ты заинтересовался моим кодом, то напиши мне на личную почту: andreyklodt@gmail.com, и я тебе проведу экскурсию🙃
+          
+          
+          function RemaningTime() {
+            const deadLine = new Date("2021-04-18");
+            const myDate = new Date();
+          
+            const difference = deadLine - myDate,
+              takeDays = Math.floor(difference / (1000 * 60 * 60 * 24)),
+              takeHours = Math.floor(((difference / 60 / 60 / 60) % 24)),
+              takeMinutes = Math.floor((difference / 1000 / 60) % 60),
+              takeSeconds = Math.floor((difference / 1000) % 60);
+          
+            return {
+              total: difference,
+              days: takeDays,
+              hours: takeHours,
+              minutes: takeMinutes,
+              seconds: takeSeconds
+            };
+          }
+          
+          function getZero(num) {
+            if (num > 0 && num <= 9) {
+              return `0${num}`;
+            } else {
+              return num;
+            }
+          }
+          
+          function setTime() {
+            const days = document.querySelector("#days"),
+              hours = document.querySelector("#hours"),
+              minutes = document.querySelector("#minutes"),
+              seconds = document.querySelector("#seconds");
+          
+          
+            const timeInterval = setInterval(UpdateTime, 1000);
+            UpdateTime();
+          
+            function UpdateTime() {
+          
+              const t = RemaningTime();
+              if (t.total <= 0) {
+                clearInterval(timeInterval);
+              } else {
+                days.textContent = getZero(t.days);
+                hours.textContent = getZero(t.hours);
+                minutes.textContent = getZero(t.minutes);
+                seconds.textContent = getZero(t.seconds);
+              }
+          
+            }
+          
+          }
+          setTime(); -->
+
+        </textarea>
+    </div>
+  </div>
+</div>
+
+<script src="js/script-min.js"></script>
+</body>
+
+</html>

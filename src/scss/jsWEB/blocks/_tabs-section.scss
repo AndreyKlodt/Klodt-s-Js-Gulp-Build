@@ -1,0 +1,84 @@
+.tabs-container {
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 90px;
+}
+
+.tabs__items-wrapper {
+  position: relative;
+  display: inline-block;
+
+  width: 370px;
+  height: 330px;
+  margin-right: 40px;
+  img {
+    border: solid 20px rgba($color: #202020, $alpha: 0.3);
+  }
+}
+
+.tabs__button {
+  font-size: 25px;
+  @include semibold;
+  font-weight: 600;
+}
+
+.tabs__left-buttons {
+  padding-left: 0;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.tabs__link {
+  cursor: pointer;
+  margin-bottom: 30px;
+  list-style-type: none;
+  background-color: rgba($color: #202020, $alpha: 0.3);
+  transition: all 0.4s ease-out 0s;
+  display: block;
+  padding: 20px;
+}
+.tabs__link:hover {
+  background-color: #fff;
+  .tabs__button {
+    color: black;
+  }
+}
+
+.tabs__button--active {
+  color: #f4da98;
+}
+
+.tabs__item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  margin: auto;
+}
+.tabs__item--hide {
+  display: none;
+}
+
+// Затухание
+
+.fade {
+  animation: fade 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Кнопки правого блока
+.tabs-wrapper {
+  padding-left: 10%;
+}

@@ -1,0 +1,54 @@
+.timer {
+  text-align: center;
+}
+.container {
+}
+.timer__title {
+  padding-top: 20px;
+  font-size: 40px;
+  color: #f4da98;
+  margin-bottom: 15px;
+}
+
+.timer__subtitle {
+  font-size: 25px;
+}
+.timer-container {
+  background-color: rgba($color: #535353, $alpha: 0.3);
+  margin-top: 90px;
+  height: 360px;
+
+  box-shadow: 0 0 50px 1px #535353;
+}
+.timer-blocks {
+  display: flex;
+  justify-content: space-around;
+  height: 180px;
+  width: 80%;
+  margin: 30px auto;
+}
+.timer__elem {
+  @include extrabold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgb(255, 255, 255);
+  width: 20%;
+  height: 90%;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 9px 1px rgb(255, 255, 255);
+  opacity: 0.9;
+  transition: 0.2s;
+}
+.timer__elem:hover {
+  opacity: 1;
+}
+.timer__elem span {
+  display: block;
+
+  font-size: 50px;
+}
+.timer__elem p {
+  margin-top: -20px;
+  font-size: 20px;
+}

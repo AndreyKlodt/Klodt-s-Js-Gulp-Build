@@ -1,0 +1,31 @@
+/////////базовые настройки
+
+// // Шрифты
+// @import "../basic/fonts";
+// preloader, bg
+@import "../basic/preloader.scss";
+@import "../basic/animatedBg";
+// Базовые настройки страницы
+@import "../basic/base";
+// Футер
+@import "../basic/footer";
+// Шапка
+@import "../basic/header";
+
+// Базовые Медиа запросы
+@import "../basic/basicMedia";
+// normalize css
+@import "../basic/normalize.scss";
+// Модальные окна
+@import "../basic/modal";
+
+/////////
+
+// Табы
+@import "blocks/tabs-section";
+// Карусель
+@import "blocks/carousel";
+// Таймер
+@import "blocks/timer";
+// Медиа
+@import "jsMedia";

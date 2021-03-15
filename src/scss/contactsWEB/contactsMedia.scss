@@ -1,0 +1,34 @@
+//contacts
+@media (max-width: 946px) {
+  .contacts-block {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacts-form {
+    width: 80%;
+  }
+  .contacts-links {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 800px) {
+  //contacts
+
+  .contacts__title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 506px) {
+  .contacts__title {
+    padding-bottom: 20px;
+  }
+  .modal-dialog {
+    margin-top: 62px;
+    width: auto;
+  }
+  .success-dialog {
+    height: 100%;
+  }
+}

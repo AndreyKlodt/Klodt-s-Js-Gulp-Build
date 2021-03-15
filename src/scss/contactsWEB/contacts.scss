@@ -1,0 +1,90 @@
+@import "../basic/base";
+// Футер
+@import "../basic/footer";
+// Шапка
+@import "../basic/header";
+// preloader, bg
+@import "../basic/preloader.scss";
+@import "../basic/animatedBg";
+// Шрифты
+@import "../basic/fonts";
+// Базовые Медиа запросы
+@import "../basic/basicMedia";
+// normalize css
+@import "../basic/normalize.scss";
+// Модальные окна
+@import "../basic/modal";
+
+.contacts {
+  text-align: center;
+  &__title {
+    font-size: 36px;
+    @include extrabold;
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__input {
+    outline: none;
+
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    width: 100%;
+    box-sizing: border-box;
+
+    background-color: rgba($color: #000000, $alpha: 0.6);
+  }
+  &__input:focus {
+    border-color: #f4da98;
+  }
+  &__input::placeholder {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  &__button {
+    @include extrabold;
+    transition: 0.2s;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+  }
+  &__button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+}
+
+.contacts__textarea {
+  resize: none;
+  height: 170px;
+}
+.container {
+}
+
+.contacts-block {
+  display: flex;
+}
+.contacts-form {
+  width: 50%;
+}
+.contacts-links span {
+  color: #f4da98;
+  font-size: 30px;
+}
+.contacts-links p {
+  margin-bottom: 30px;
+}
+.contacts-links a {
+  font-size: 26px;
+}
+.contacts-links a:hover {
+}
